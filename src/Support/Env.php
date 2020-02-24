@@ -173,8 +173,8 @@ class Env
     public function load()
     {
         $this->checkForSpecificEnvironmentFile();
-
-        $dotEnv = new Dotenv($this->getEnvironmentPath(), $this->getEnvironmentFile());
+        $dotEnv = Dotenv::createImmutable($this->getEnvironmentPath(),$this->getEnvironmentFile());
+        //$dotEnv = new Dotenv($this->getEnvironmentPath(), $this->getEnvironmentFile());
 
         $dotEnv->load();
 
@@ -188,9 +188,9 @@ class Env
     public function overload()
     {
         $this->checkForSpecificEnvironmentFile();
-
-        $dotEnv = new Dotenv($this->getEnvironmentPath(), $this->getEnvironmentFile());
-        $dotEnv->overload();
+        $dotEnv = Dotenv::createImmutable($this->getEnvironmentPath(),$this->getEnvironmentFile());
+        //$dotEnv = new Dotenv($this->getEnvironmentPath(), $this->getEnvironmentFile());
+        $dotEnv->load();
 
         $this->validateEnvironmentFile($dotEnv);
     }

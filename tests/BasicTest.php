@@ -23,4 +23,25 @@ final class BasicTest extends TestCase
         $this->assertArrayHasKey("components",$test);
         $this->assertIsArray($test["components"]);
     }
+
+
+    public function testLoadDotEnv()
+    {
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/fixture',['env']);
+        $dotenv->load();
+        $this->assertEquals(getenv('ENVIRONMENT'),'testing');
+
+    }
+
+
+    public function testLoadEnv()
+    {
+        $root = dirname(__DIR__.'/fixture/');
+        ConfigKit::config()->useRootPath( $root);
+        $environment = ConfigKit::env();
+
+        $environment->load();
+        $this->assertEquals(getenv('ENVIRONMENT2'),'testing2');
+
+    }
 }
