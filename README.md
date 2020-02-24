@@ -1,3 +1,7 @@
+
+[![Build Status](https://travis-ci.com/katoba86/yii2-configuration.svg?branch=master)](https://travis-ci.com/katoba86/yii2-configuration)
+
+
 # Yii2 ConfigKit 
 ## Yii2 Flexible Configuration Tool
 
