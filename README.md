@@ -1,4 +1,5 @@
-# ConfigKit 
+# Yii2 ConfigKit 
+## Yii2 Flexible Configuration Tool
 
 Yii2-ConfigKit 1.0 slightly modified
 
