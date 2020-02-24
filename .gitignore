@@ -30,6 +30,5 @@ tests/_support/_generated
 /package-lock.json
 /mix-manifest.json
 /mix.js.map
-.env
-/.env
+
 
