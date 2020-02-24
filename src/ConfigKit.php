@@ -84,7 +84,7 @@ class ConfigKit
             static::$container->add(FilesystemInterface::class, Filesystem::class);
             static::$container->add(Str::class);
             static::$container->share(Env::class)
-                ->withArguments([ConfigurationInterface::class, FilesystemInterface::class]);
+                ->addArguments([ConfigurationInterface::class, FilesystemInterface::class]);
         }
 
         return static::$container;
