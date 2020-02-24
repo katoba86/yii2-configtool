@@ -1,8 +1,11 @@
 # ConfigKit 
 
-[![Packagist Version](https://img.shields.io/packagist/v/2amigos/yii2-config-kit.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-config-kit)
-[![Latest Stable Version](https://poser.pugx.org/2amigos/yii2-config-kit/version)](https://packagist.org/packages/2amigos/yii2-config-kit)
-[![Total Downloads](https://poser.pugx.org/2amigos/yii2-config-kit/downloads)](https://packagist.org/packages/2amigos/yii2-config-kit)
+Yii2-ConfigKit 1.0 slightly modified
+
+Dependencies on Composer have been adapted to the latest version of league/container.
+
+Also a small basic test was implemented. 
+Coverage not complete. Possibly to be done soon. 
 
 In order to provide ourselves a higher flexibility with the way we build templates for our Yii based projects, we built this kit. It is, in a way, the newest generation of the widely used `YiiBootstrap`, but it is so much better structured and less complex than the previously mentioned was.
 
