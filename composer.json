@@ -1,13 +1,21 @@
 {
     "name": "katoba86/yii2-configuration",
     "description": "Configuration kit for Yii applications",
-    "keywords": ["yii2", "kit", "configuration", "project template"],
-    "homepage": "https://2amigos.us/",
+    "keywords": ["yii2", "kit", "configuration", "project template","config","environment"],
+    "homepage": "https://fahrplan-bus-bahn.de",
     "type": "extension",
+     "authors": [
+        {
+            "name": "Kai Bartholome",
+            "email": "kai.bartholome@outlook.com",
+            "homepage": "https://fahrplan-bus-bahn.de",
+            "role": "Developer"
+        }
+    ],
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/2amigos/yii2-config-kit/issues?state=open",
-        "source": "https://github.com/2amigos/yii2-config-kit"
+        "issues": "https://github.com/katoba86/yii2-configuration/issues?state=open",
+        "source": "https://github.com/katoba86/yii2-configuration"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
